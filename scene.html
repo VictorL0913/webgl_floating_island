@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WebGL Floating Island</title>
+  <style>
+    body { 
+      background: white; 
+      margin: 0; 
+      overflow: hidden; 
+      font-family: Arial, sans-serif;
+    }
+    canvas { 
+      display: block; 
+      width: 100vw;
+      height: 100vh;
+    }
+    #controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      z-index: 100;
+    }
+    #controls h3 {
+      margin: 0 0 10px 0;
+    }
+    #controls p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <h3>Controls</h3>
+    <p>W S : Move camera up/down</p>
+    <p>A D : Rotate camera 360°</p>
+    <p>Q E : Zoom in and out</p>
+    <p>R F : Rotate windmill direction</p>
+    <p>Scroll : Rotate spotlight left/right</p>
+    <p>Arrow keys : Move car</p>
+  </div>
+  <canvas id="webgl"></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+  <script src="island.js"></script>
+</body>
+</html>
